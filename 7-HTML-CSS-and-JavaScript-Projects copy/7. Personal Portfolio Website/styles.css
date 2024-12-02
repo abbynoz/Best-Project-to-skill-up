@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    background-color: #162415;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #4CAF50; /* Green hover */
+}
+
+.contact-button {
+    background-color: transparent;
+    border: 2px solid #4CAF50; /* Green border */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #4CAF50; /* Green fill */
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.pexels.com/photos/101710/pexels-photo-101710.jpeg?cs=srgb&dl=pexels-mali-101710.jpg&fm=jpg') no-repeat center/cover; /* Replace with your image */
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    text-align: left;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3e8e41;
+}

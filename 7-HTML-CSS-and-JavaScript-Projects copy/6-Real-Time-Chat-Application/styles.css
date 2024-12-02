@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff); /* Blue Gradient */
+    color: white;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: #0072ff; /* Blue */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Chat Box */
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sent Messages */
+.chat-box .message {
+    background-color: #0072ff;
+    color: white;
+    align-self: flex-end;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* Received Messages */
+.chat-box .message.received {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* Message Input */
+.message-input {
+    display: flex;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+
+.message-input input {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-right: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.message-input input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.5);
+}
+
+.message-input button {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+    background-color: #0056b3;
+}

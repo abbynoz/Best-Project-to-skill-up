@@ -1,0 +1,53 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #2d89ff, #0d47a1); /* Blue Gradient */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff; /* White Background */
+    color: #333; /* Dark Text */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Charts Container */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Individual Chart Item */
+.chart-item {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

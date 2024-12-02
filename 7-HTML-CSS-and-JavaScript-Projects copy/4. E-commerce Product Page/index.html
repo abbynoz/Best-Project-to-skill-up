@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Timeless Watches</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <img id="main-image" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/1.jpg?5491" alt="Luxury Watch">
+            <div class="thumbnails">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491" alt="Thumbnail 1">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491" alt="Thumbnail 2">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491" alt="Thumbnail 3">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/2.jpg?5491" alt="Thumbnail 1">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/5.jpg?5491" alt="Thumbnail 2">
+                <img onclick="changeImage('https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491')" src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/1542852/7.jpg?5491" alt="Thumbnail 3">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Elegant Luxury Watch</h1>
+            <p class="brand">PRESTIGE TIME CO.</p>
+            <p class="price">
+                <span class="current-price">$499.99</span>
+                <span class="old-price">$799.99</span>
+                <span class="discount">38% OFF</span>
+            </p>
+            <p class="description">
+                This luxurious timepiece combines elegance with precision craftsmanship. Perfect for formal occasions or everyday wear, it features premium materials and impeccable design.
+            </p>
+            
+            <!-- Ratings Section -->
+            <div class="ratings">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <p>Rated 4.8/5 (256 reviews)</p>
+            </div>
+            
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to Bag</button>
+
+            <!-- Promotional Section -->
+            <div class="promotion">
+                <h3>Limited-Time Offer!</h3>
+                <p>Get an additional 10% off your first purchase when you sign up for our newsletter.</p>
+                <button class="promo-btn">Sign Up Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Timeless Watches. Crafted for Excellence.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>

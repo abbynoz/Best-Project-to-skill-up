@@ -1,0 +1,40 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff); /* Blue Gradient */
+    color: white;
+}
+
+/* Clock Container */
+.clock-container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Time Display */
+.time {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Date Display */
+.date {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f0f0f0;
+}

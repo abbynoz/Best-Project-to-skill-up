@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* App Container */
+.app-container {
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0.8; /* Adjust the opacity here */
+}
+
+
+/* Header Styling */
+.app-header h1 {
+    font-size: 2.5rem;
+    color: #ff8c00;
+}
+
+.app-header p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    flex: 1;
+    background: #444;
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc6b00;
+}
+
+/* Current Weather */
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.current-weather .icon img {
+    width: 80px;
+}
+
+.info h2 {
+    font-size: 2rem;
+    color: #ff8c00;
+}
+
+.info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Forecast Section */
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.day {
+    background: #333;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.weekday {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+.day .icon img {
+    width: 50px;
+}
+
+.temp {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Dynamic Background */
+body.clear {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.clouds {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.rain {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.snow {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body.default {
+    background-image: url('https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg?cs=srgb&dl=pexels-pixabay-459451.jpg&fm=jpg');
+}
+
+body {
+    background-image: url('https://media.istockphoto.com/id/926497236/photo/tropical-sea-in-summer.jpg?s=612x612&w=0&k=20&c=SgT--E-a5_UF4GPVnpC6r1IDtThuDiUHmtTbhHg5zJA=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
